@@ -6,14 +6,13 @@ import java.util.List;
 
 public class Sentence {
 
-    private final List<Word>  words = new ArrayList<>();
-
+    private  List<Word>  words = new ArrayList<>();
 
     public Sentence(String str){
-        String[] wordStrs = str.split("\\s");
+        String[] wordStrs = str.split(" ");
         for(String wordStr: wordStrs) {
-            Word work = new Word(wordStr);
-            words.add(work);
+            Word word = new Word(wordStr);
+            words.add(word);
         }
     }
 
@@ -23,7 +22,7 @@ public class Sentence {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (Word s  : words ) {
+        for (Word s: words) {
             sb.append(s.toString());
             sb.append(" ");
         }

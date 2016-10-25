@@ -15,7 +15,7 @@ public class TestTask {
         int enteredNumber = 0;
         do {
             try {
-                System.out.println("Enter k-th position");
+                System.out.println("Enter number of the k-th position");
                 enteredNumber = scanner.nextInt();
                 break;
             } catch (InputMismatchException e) {
@@ -31,7 +31,5 @@ public class TestTask {
             word.replaceCharacter(enteredNumber -1, symbol);
         }
         System.out.println(sentence.toString());
-
-
     }
 }

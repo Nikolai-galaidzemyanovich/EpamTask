@@ -16,7 +16,6 @@ public class Word {
             word = builder.toString();
         }
     }
-
     @Override
     public String toString() {
         return word;
